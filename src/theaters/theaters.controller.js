@@ -8,7 +8,6 @@ async function list(req, res) {
 
     theater['movies'] = movies;
   }
-  console.log('line 11');
   res.json({ data: theaters });
 }
 
