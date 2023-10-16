@@ -20,6 +20,7 @@ async function listSpecificMovie(req, res, next) {
   next();
 }
 
+//exports
 module.exports = {
   list: [listSpecificMovie, list],
 };

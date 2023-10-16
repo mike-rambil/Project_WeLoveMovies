@@ -9,6 +9,7 @@ async function read(req, res) {
   res.json({ data: res.locals.movie });
 }
 
+//validations
 async function validateMovieId(req, res, next) {
   const { movieId } = req.params;
   const movie = await service.read(Number(movieId));
